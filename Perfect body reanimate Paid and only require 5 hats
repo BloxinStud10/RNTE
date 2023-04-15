@@ -4,6 +4,8 @@ game.Players.LocalPlayer.Character["Kate Hair"].Handle.Mesh:Destroy() --Lavander
 game.Players.LocalPlayer.Character["LavanderHair"].Handle.Mesh:Destroy()
 game.Players.LocalPlayer.Character["Robloxclassicred"].Handle.Mesh:Destroy()
 game.Players.LocalPlayer.Character["PlaneModel"].Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character["Necklace"].Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character["Meshes/cyberbladeMeshAccessory"].Handle.SpecialMesh:Destroy()
 
 
 local c = game.Players.LocalPlayer.Character
@@ -909,6 +911,20 @@ local handle2 = gp(hat2, "Handle", "BasePart")
 local att2 = gp(handle2, "att1_Handle", "Attachment")
 att2.Parent = cplayer["Left Leg"]
 att2.Position = Vector3.new(-0, 0, 0) 
+att2.Rotation = Vector3.new(90, 0, 0)
+
+local hat2 = gp(cplayer, "Necklace", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Head"]
+att2.Position = Vector3.new(-0, 0, 0) 
+att2.Rotation = Vector3.new(90, 90, 0)
+
+local hat2 = gp(cplayer, "Meshes/cyberbladeMeshAccessory", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Right Arm"]
+att2.Position = Vector3.new(-0, -1.25, -0.75)
 att2.Rotation = Vector3.new(90, 0, 0)
 
 _G.loop = true
