@@ -922,7 +922,7 @@ local hat2 = gp(cplayer, "MeshPartAccessory", "Accessory")
 local handle2 = gp(hat2, "Handle", "BasePart")
 local att2 = gp(handle2, "att1_Handle", "Attachment")
 att2.Parent = cplayer["Right Arm"]
-att2.Position = Vector3.new(-0,-2,-0.6) 
+att2.Position = Vector3.new(-0,-2.2,-0.6) 
 att2.Rotation = Vector3.new(-190,0,0)
 
 _G.loop = true
