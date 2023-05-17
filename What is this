@@ -860,7 +860,7 @@ local hat2 = gp(cplayer, "Metashard", "Accessory")
 local handle2 = gp(hat2, "Handle", "BasePart")
 local att2 = gp(handle2, "att1_Handle", "Attachment")
 att2.Parent = cplayer["Torso"] --any part of humanoid
-att2.Position = Vector3.new(-0, 0.2, 0)
+att2.Position = Vector3.new(-0, 0.1, 0)
 att2.Rotation = Vector3.new(0, 0, 0)--you can delete this 
 
 
