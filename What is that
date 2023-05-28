@@ -1,3 +1,14 @@
+local v3_net, v3_808 = Vector3.new(0, 0, 25), Vector3.new(8, 0, 8)
+    local function getNetlessVelocity(realPartVelocity)
+        local mag = realPartVelocity.Magnitude
+        if mag > 1 then
+            local unit = realPartVelocity.Unit
+            if (unit.Y > 0.25) or (unit.Y < -0.75) then
+                return unit * (25.1 / unit.Y)
+            end
+        end
+        return v3_net + realPartVelocity * v3_808
+    end
 local simradius = "shp" --simulation radius (net bypass) method
 --simulation radius (net bypass) method
 --"shp" - sethiddenproperty
