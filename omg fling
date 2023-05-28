@@ -1,4 +1,4 @@
-local v3_net, v3_808 = Vector3.new(5000, 25.1, 0), Vector3.new(8, 0, 8)
+local v3_net, v3_808 = Vector3.new(0, 0, 25), Vector3.new(8, 0, 8)
     local function getNetlessVelocity(realPartVelocity)
         local mag = realPartVelocity.Magnitude
         if mag > 1 then
