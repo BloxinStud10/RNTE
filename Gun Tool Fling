@@ -811,13 +811,27 @@ end)
 mouse.Button1Up:Connect(function()
     fling = false
 end)
+local omgHuman = game.Players.LocalPlayer.Character.HumanoidRootPart
+local UselessPartLmao = Instance.new("Part", omgHuman)
+UselessPartLmao.Name = "totally not useless"
+UselessPartLmao.CanCollide = false
+UselessPartLmao.Transparency = 1
+local well = Instance.new("Weld", UselessPartLmao)
+well.Name = "Lois family guy"
+well.Part0 = UselessPartLmao
+well.Part1 = omgHuman
+well.C0 = cf(0, 12.5, 0)
+well.C1 = cf(0, 0, 0)
 local function doForSignal(signal, vel)
     spawn(function()
         while signal:Wait() and c and handle1 and biggesthandle do
-            if fling and mouse.Target then
+            if fling == true and mouse.Target then
                 biggesthandle.Position = mouse.Hit.Position
             end
-            handle1.RotVelocity = Vector3.new(999999,999999,0)
+            if fling == false then
+                biggesthandle.Position = UselessPartLmao.Position
+            end
+            handle1.RotVelocity = Vector3.new(999999,999999,999999)
         end
     end)
 end
