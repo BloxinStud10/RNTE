@@ -822,6 +822,18 @@ well.Part0 = UselessPartLmao
 well.Part1 = omgHuman
 well.C0 = cf(0, 12.5, 0)
 well.C1 = cf(0, 0, 0)
+local Accessoryy = c["Back_AccAccessory"].Handle
+local FlingHitbox = Instance.new("Part", Accessoryy)
+FlingHitbox.Anchored = false
+FlingHitbox.CanCollide = false
+FlingHitbox.Size = Vector3.new(1,1,1)
+FlingHitbox.Name = "Bout to go crazy with dis"
+local WeldThingy = Instance.new("Weld", Accessoryy)
+WeldThingy.Name = "ehhhh"
+WeldThingy.Part0 = Accessoryy
+WeldThingy.Part1 = SWORD
+WeldThingy.C0 = CFrame.new(0, -1.75, 0)
+WeldThingy.C1 = CFrame.new(0, 0, 0)
 local function doForSignal(signal, vel)
     spawn(function()
         while signal:Wait() and c and handle1 and biggesthandle do
