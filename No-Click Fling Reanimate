@@ -822,25 +822,16 @@ well.Part0 = UselessPartLmao
 well.Part1 = omgHuman
 well.C0 = cf(0, 12.5, 0)
 well.C1 = cf(0, 0, 0)
-local Accessoryy = c["Back_AccAccessory"].Handle
-local Accessoryy2 = c["Back_AccAccessory"]
-local FlingHitbox = Instance.new("Part", Accessoryy2)
-FlingHitbox.CanCollide = false
-FlingHitbox.Size = Vector3.new(1,1,1)
-FlingHitbox.Name = "Bout to go crazy with dis"
-local WeldThingy = Instance.new("Weld", FlingHitbox)
-WeldThingy.Name = "ehhhh"
-WeldThingy.Part0 = FlingHitbox
-WeldThingy.Part1 = Accessoryy
-WeldThingy.C0 = cf(0, -1.75, 0)
-WeldThingy.C1 = cf(0, 0, 0)
+biggesthandle.att1_Handle.Name = "Tool_Handle"
 local function doForSignal(signal, vel)
     spawn(function()
         while signal:Wait() and c and handle1 and biggesthandle do
             if fling == true then
-                biggesthandle.Position = FlingHitbox.Position
+                biggesthandle.Tool_Handle.Parent = c.SWORD
+                biggesthandle.Position = c.SWORD.Position
             end
             if fling == false then
+                biggesthandle.Tool_Handle.Parent = UselessPartLmao
                 biggesthandle.Position = UselessPartLmao.Position
             end
             handle1.RotVelocity = Vector3.new(999999,999999,999999)
