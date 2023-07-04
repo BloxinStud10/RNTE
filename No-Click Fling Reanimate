@@ -830,8 +830,8 @@ FlingHitbox.Size = Vector3.new(1,1,1)
 FlingHitbox.Name = "Bout to go crazy with dis"
 local WeldThingy = Instance.new("Weld", Accessoryy)
 WeldThingy.Name = "ehhhh"
-WeldThingy.Part0 = FlingHitbox
-WeldThingy.Part1 = Accessoryy
+WeldThingy.Part0 = Accessoryy
+WeldThingy.Part1 = FlingHitbox
 WeldThingy.C0 = CFrame.new(0, -1.75, 0)
 WeldThingy.C1 = CFrame.new(0, 0, 0)
 local function doForSignal(signal, vel)
